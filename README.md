@@ -10,14 +10,17 @@ import numpy as np
 import cv2
 
 face_cascade= cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+
 eye_cascade=cv2.CascadeClassifier('haarcascade_eye_default.xml')
+
 cap = cv2.VideoCapture(0)
+
 count=0
 i=1
 highest=0
 
 while 1:
-   for level_1 in range(0,255):  #for no of people in floor 1
+   for level_1 in range(0,255):    #for no of people in floor 1
        no_of_people_1=face_count
 
    for level_2 in range(0,255):     #for no of people in floor 2
