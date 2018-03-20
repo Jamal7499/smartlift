@@ -55,8 +55,12 @@ def face_count():     # for counting no of faces
     
     
  firebase=firebase.FirebaseApplication("https://first-file42.firebase.com")
+ 
  data=('faces':count)
+ 
  result=firebase.put("https://first-file42.firebase.com/'*'/data")  #update the value on the firebase
+
 cap.release()
+
 cv2.distroyAllWindows()   
     
