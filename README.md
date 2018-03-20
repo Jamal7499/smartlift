@@ -2,8 +2,11 @@
 # smart elevator system which will reduce the power consumption and saves precious time. 
 # python program that will count the no of faces by using haar cascade and will return the floor with highest no of people
 # then according to that priority the lift will go to that floor.
+
 from firebase import firebase  # for updateing the data on the server
+
 import numpy as np
+
 import cv2
 
 face_cascade= cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
